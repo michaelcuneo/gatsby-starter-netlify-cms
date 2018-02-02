@@ -1,49 +1,47 @@
 import React from 'react';
 import Link from 'gatsby-link';
-import './Style.module.css';
+import FontAwesome from 'react-fontawesome';
 
 import logo from '../img/soci_logo_256.png';
 
-const Header = () => (
-  <header id="masthead" className="site-header logo-left" role="banner">
-    <nav id="site-navigation" className="main-navigation menu-right" role="navigation">
-      <div className="site-branding">
-        <div className="site-logo">
-          <Link to="/" className="custom-logo-link" rel="home" itemProp="url"><img width="128" height="128" src={ logo } className="custom-logo" alt="" itemProp="logo" /></Link>
+class Header extends React.Component {
+  render() {
+    return (
+      <header id="masthead" className="site-header logo-left" role="banner">
+        <div className="site-branding">
+          <div className="site-logo">
+            <a href="/" className="custom-logo-link" rel="home" itemProp="url"><img width="128" height="128" src={ logo } className="custom-logo" alt="" itemProp="logo" /></a>
+          </div>
         </div>
-      </div>
-      <div className="toggle-btn">
-        <span className="toggle-bar toggle-bar1"></span>
-        <span className="toggle-bar toggle-bar2"></span>
-        <span className="toggle-bar toggle-bar3"></span>
-      </div>
-      <div>
-      <ul className="nav plx_nav menu">
-        <li className="eight_sec_menu menu-item" id="eight_sec_slider"><Link data-scroll data-options='{ "speed: 500,easing": "easeInQuad" }' to="/#slider">HOME</Link></li>
-        <li className="eight_sec_menu menu-item" id="eight_sec_menu_about"><Link className='menu_about_section' data-scroll data-options='{ "easing": "easeInQuad" }' to="/#about-soci" >ABOUT SOCI</Link></li>
-        <li className="eight_sec_menu menu-item" id="eight_sec_menu_portfolio"><Link className='menu_portfolio_section' data-scroll data-options='{ "easing": "easeInQuad" }' to="/#what-we-do" >WHAT WE DO</Link></li>
-        <li className="eight_sec_menu menu-item" id="eight_sec_menu_blog"><Link className='menu_blog_section' data-scroll data-options='{ "easing": "easeInQuad" }' to="/#our-stories" >OUR STORIES</Link></li>
-        <li className="eight_sec_menu menu-item" id="eight_sec_menu_contact"><Link className='menu_contact_section' data-scroll data-options='{ "easing": "easeInQuad" }' to="/#contact-us" >CONTACT US</Link></li>
-      </ul>
-      </div>
-    </nav>
-    <div className="ed-search-wrap">
-      <div className="search-icon">
-      <i className="fa fa-search"></i>
-        <div className="ed-search">
-        <div className="search-close"><i className="fa fa-close"></i></div>
-        <form action="http://localhost:32902/" className="search-form" method="get" role="search">
-          <label>
-            <span className="screen-reader-text">Search for:</span>
-            <input type="search" title="Search for:" name="s" value="" placeholder="discover..." className="search-field" />
-          </label>
-          <input type="submit" value="discover" className="search-submit" />
-        </form> 
+        <nav id="site-navigation" className="main-navigation <?php echo $ed_nav_alignment;?>" role="navigation">
+          <ul className="nav plx_nav menu">
+            <li className="eight_sec_menu menu-item" id="eight_sec_slider"><a data-scroll data-options='{ "speed: 500,easing": "easeInQuad" }' href="#slider">HOME</a></li>
+            <li className="eight_sec_menu menu-item" id="eight_sec_menu_about"><a className='menu_about_section' data-scroll data-options='{ "easing": "easeInQuad" }' href="#about-soci" >ABOUT SOCI</a></li>
+            <li className="eight_sec_menu menu-item" id="eight_sec_menu_portfolio"><a className='menu_portfolio_section' data-scroll data-options='{ "easing": "easeInQuad" }' href="#what-we-do" >WHAT WE DO</a></li>
+            <li className="eight_sec_menu menu-item" id="eight_sec_menu_blog"><a className='menu_blog_section' data-scroll data-options='{ "easing": "easeInQuad" }' href="#our-stories" >OUR STORIES</a></li>
+            <li className="eight_sec_menu menu-item" id="eight_sec_menu_contact"><a className='menu_contact_section' data-scroll data-options='{ "easing": "easeInQuad" }' href="#contact-us" >CONTACT US</a></li>
+          </ul>
+        </nav>
+        <div className="ed-search-wrap">
+          <div className="search-icon">
+          <i className="fa fa-search"></i>
+            <div className="ed-search">
+            <div className="search-close"><i className="fa fa-close"></i></div>
+              <form action="http://localhost:32902/" className="search-form" method="get" role="search">
+                <label>
+                  <span className="screen-reader-text">Search for:</span>
+                  <input type="search" title="Search for:" name="s" value="" placeholder="discover..." className="search-field" />
+                </label>
+                <input type="submit" value="discover" className="search-submit" />
+              </form> 
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  <div className="header-sticky-overlay"></div>
-  </header>
-);
+        { /* <div className="university"></div> */ }
+        <div className="header-sticky-overlay"></div>
+      </header>
+    );
+  }
+}
 
 export default Header;

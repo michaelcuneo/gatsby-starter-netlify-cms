@@ -6,6 +6,18 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [`Open Sans`, `Oswald`, `Raleway`]
+      }
+    },
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography.js`,
+      },
+    },
+    {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/src/pages`,
@@ -32,6 +44,6 @@ module.exports = {
       options: {
         modulePath: `${__dirname}/src/cms/cms.js`,
       },
-    },
+    }
   ],
 };

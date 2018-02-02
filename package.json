@@ -4,13 +4,16 @@
   "version": "1.1.0",
   "author": "Austin Green",
   "dependencies": {
+    "axios": "^0.17.1",
     "bulma": "^0.6.0",
     "gatsby": "^1.9.63",
     "gatsby-link": "^1.6.21",
+    "gatsby-plugin-google-fonts": "0.0.3",
     "gatsby-plugin-netlify-cms": "^1.0.2",
     "gatsby-plugin-react-helmet": "^1.0.5",
     "gatsby-plugin-sass": "^1.0.12",
     "gatsby-plugin-sharp": "^1.6.18",
+    "gatsby-plugin-typography": "^1.7.13",
     "gatsby-remark-images": "^1.5.18",
     "gatsby-source-filesystem": "^1.5.5",
     "gatsby-transformer-remark": "^1.7.17",
@@ -18,8 +21,13 @@
     "jquery": "^3.3.1",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
+    "react-fontawesome": "^1.6.1",
     "react-helmet": "^5.2.0",
-    "react-load-script": "0.0.6"
+    "react-image-gallery": "^0.8.7",
+    "react-load-script": "0.0.6",
+    "react-responsive-carousel": "^3.1.33",
+    "react-slick": "^0.17.1",
+    "react-sticky-dynamic-header": "^0.1.2"
   },
   "keywords": [
     "gatsby"

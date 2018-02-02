@@ -1997,41 +1997,6 @@ TEAM SECTION
 }
 
 /*----------------------------------------------
-CALL TO ACTION SECTION
------------------------------------------------*/
-.eight_sec_plx_cta_section {
-	background: url(../img/cta-bg.jpg) no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-	padding: 70px 0;
-	position: relative;
-	text-align: center;
-	z-index: 1;
-}
-.eight_sec_plx_cta_section:after {
-	content: "";
-	background: url(../img/slider-caption-bg.png) repeat;
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;  
-	height: 100%;
-	z-index: -1;
-}
-.eight_sec_plx_cta_section h2.cta-sec:after {
-	border-bottom-color: #fff;
-}
-.eight_sec_plx_cta_section h2.cta-sec {
-	color: #fff;
-}
-.eight_sec_plx_cta_section .cta-description {
-    font-size: 17px;
-    margin: 0 0 50px 0;
-    text-align: center;
-    color: #fff;
-}
-
-/*----------------------------------------------
 BLOG SECTION
 -----------------------------------------------*/
 .eight_sec_plx_blog_section {
@@ -2155,66 +2120,6 @@ BLOG SECTION
     padding-left: 10px;
     text-align: right;
     width: 50%;
-}
-
-/*----------------------------------------------
-TESTIMONIAL SECTION
------------------------------------------------*/
-.eight_sec_plx_testimonial_section {
-	background: url(../img/testimonial-bg.jpg) no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-	padding: 70px 0;
-	text-align: center;
-	position: relative;
-	z-index: 1;
-}
-.eight_sec_plx_testimonial_section:after {
-	content: "";
-	background: url(../img/testimonial-pattern.png) repeat;
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: -1;
-}
-.eight_sec_plx_testimonial_section h2.testimonial-sec, 
-.eight_sec_plx_testimonial_section .testimonial-description {
-	color: #fff;
-}
-.eight_sec_plx_testimonial_section .slide > a {
-    border-radius: 100%;
-    display: block;
-    height: 122px;
-    margin: 0 auto 30px;
-    overflow: hidden;
-    width: 122px;
-}
-.eight_sec_plx_testimonial_section .slide .testimonial-content {
-    color: #fff;
-    margin: 0 auto;
-    width: 80%;
-}
-.eight_sec_plx_testimonial_section .slide .testimonial-title {
-    color: #fff;
-    font-size: 18px;
-    font-weight: 300;
-    margin-bottom: 0;
-    margin-top: 0;
-    text-transform: uppercase;
-}
-.eight_sec_plx_testimonial_section .slide .testimonial-title a {
-	display: inline-block;
-}
-.eight_sec_plx_testimonial_section .slide .testimonial-title a:hover {
-	color: #ffaaaa;
-}
-.eight_sec_plx_testimonial_section .slide .testimonial-title p {
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 24px;
-    margin: 0;
 }
 
 /*-----------------------------------------
@@ -2598,4 +2503,34 @@ ERROR PAGE
     font-size: 6em;
     line-height: 1;
     margin: 0;
+}
+
+/* --------------------------------------------
+ADDED FROM THE MAIN FILE 
+----------------------------------------------*/
+
+.site-header.fixed {
+	background: url("../img/header_image.png") no-repeat scroll left top;
+	background-size: cover;
+}
+
+.site-header.fixed .header-sticky-overlay:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.4);
+    z-index: -1;
+}
+
+.university {
+	position: absolute;
+	background: url("../img/LOGO_Square.jpg") no-repeat;
+	background-size: cover;
+	width: 100px;
+	height: 100px;
+	left: 0;
+	top: 0;
 }
